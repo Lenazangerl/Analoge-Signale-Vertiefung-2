@@ -293,3 +293,66 @@ $$
 X_C = \frac{1}{\omega C}
 $$
 → sinkt mit Frequenz
+
+---
+
+# In der Nachrichtentechnik wird der Begriff Modulation verwendet, um welche Vorgänge zu beschreiben? Welche drei Parameter werden dabei angepasst?
+
+## Was bedeutet Modulation?
+
+In der Nachrichtentechnik bedeutet **Modulation**, dass ein **hochfrequentes Trägersignal verändert wird**, damit ein **Nutzsignal (z. B. Sprache, Musik, Daten)** übertragen werden kann.
+
+---
+
+## Welche Vorgänge beschreibt Modulation?
+
+Modulation beschreibt die gezielte Veränderung eines Trägersignals durch ein Nutzsignal, damit dieses über große Entfernungen übertragen werden kann (z. B. Radio, WLAN, Mobilfunk).
+
+---
+
+## Die 3 veränderbaren Parameter
+
+Eine sinusförmige Trägerwelle kann über drei Eigenschaften verändert werden:
+
+---
+
+## 1. Amplitudenmodulation (AM)
+
+Die **Amplitude (Signalhöhe)** wird verändert.
+
+$$
+A(t)
+$$
+
+Beispiel:
+- Mittelwellenradio (AM)
+
+---
+
+## 2. Frequenzmodulation (FM)
+
+Die **Frequenz** wird verändert.
+
+$$
+f(t)
+$$
+
+Beispiel:
+- UKW-Radio (FM)
+
+---
+
+## 3. Phasenmodulation (PM)
+
+Die **Phase** wird verändert.
+
+$$
+\varphi(t)
+$$
+
+Beispiel:
+- digitale Übertragung (z. B. WLAN, Mobilfunk)
+
+---
+
+
