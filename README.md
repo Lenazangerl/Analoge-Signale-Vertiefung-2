@@ -182,22 +182,10 @@ Auch hier wird der Spitzenwert nur kurz erreicht → gleicher Effektivwert wie D
 
 **Kondensatoren und Spulen werden in der Wechselstromtechnik als Widerstände eingesetzt. Beschreibe die drei verschiedenen Widerstandsarten bei einer sinusförmigen Wechselspannung. Warum ist zum Beispiel der Widerstand einer Spule an Sinusspannungen größer als bei Gleichspannung? Wie berechnet man diese Widerstände und wieso spielt die Kreisfrequenz hier eine Rolle?**
 
-## 1. Ohmscher Widerstand (R)
 
-Das ist der normale elektrische Widerstand (z. B. Draht, Heizwiderstand).
 
-$$
-R = \frac{U}{I}
-$$
 
-### Eigenschaften
-- gilt für Gleich- und Wechselstrom gleich
-- unabhängig von der Frequenz
-- Energie wird in Wärme umgewandelt
-
----
-
-## 2. Induktiver Widerstand (Spule)
+## Induktiver Widerstand (Spule)
 
 $$
 X_L = \omega L
@@ -208,78 +196,57 @@ mit:
 - \(L\) = Induktivität  
 - \(\omega = 2\pi f\)
 
-### Verhalten
+---
 
-**Gleichstrom (f = 0):**
+### Gleichstrom (f = 0)
+
 $$
 X_L = 0
 $$
-→ Spule wirkt wie ein normaler Leiter
 
-**Wechselstrom:**
-→ Stromänderung erzeugt Gegenspannung (Selbstinduktion)
+→ Die Spule wirkt wie ein normaler Leiter (fast kein Widerstand)
 
-### Warum wird er bei AC größer?
+---
 
-Je höher die Frequenz, desto schneller ändert sich der Strom:
+### Erklärung
+
+Bei Gleichstrom ändert sich der Strom nicht.  
+Ohne Stromänderung entsteht keine Induktionsspannung:
+
+- keine Änderung des Magnetfelds  
+- keine Gegenspannung  
+- daher kein „induktiver Widerstand“
+
+---
+
+### Wechselstrom
+
+Bei Wechselspannung ändert sich der Strom ständig:
+
+- Spule erzeugt eine Gegenspannung
+- sie „wehrt sich“ gegen Stromänderung
+
+---
+
+### Warum steigt der Widerstand bei AC?
 
 $$
 X_L \propto f
 $$
 
----
-
-## 3. Kapazitiver Widerstand (Kondensator)
-
-$$
-X_C = \frac{1}{\omega C}
-$$
-
-mit:
-- \(X_C\) = kapazitiver Widerstand  
-- \(C\) = Kapazität  
-- \(\omega = 2\pi f\)
-
-### Verhalten
-
-**Gleichstrom (f = 0):**
-$$
-X_C \rightarrow \infty
-$$
-→ Kondensator blockiert Gleichstrom
-
-**Wechselstrom:**
-→ ständiges Laden und Entladen → Strom kann fließen
-
-### Warum wird er bei hoher Frequenz kleiner?
-
-$$
-X_C \propto \frac{1}{f}
-$$
+Je höher die Frequenz:
+- desto schneller die Stromänderung
+- desto stärker die Gegeninduktion
+- desto größer der Widerstand
 
 ---
 
-## 4. Kreisfrequenz
+### Kreisfrequenz
 
 $$
 \omega = 2\pi f
 $$
 
-### Bedeutung
-- beschreibt wie schnell sich das Signal ändert
-
-### Auswirkungen
-
-Spule:
 $$
 X_L = \omega L
 $$
-
-Kondensator:
-$$
-X_C = \frac{1}{\omega C}
-$$
-
----
-
-
