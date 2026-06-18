@@ -188,6 +188,7 @@ $$
 R = \frac{U}{I}
 $$
 
+### Eigenschaften
 - gilt für Gleich- und Wechselstrom gleich
 - unabhängig von der Frequenz
 - elektrische Energie wird in Wärme umgewandelt
@@ -195,10 +196,6 @@ $$
 ---
 
 ## 2. Induktiver Widerstand (Spule)
-
-
-::contentReference[oaicite:0]{index=0}
-
 
 $$
 X_L = \omega L
@@ -208,6 +205,8 @@ mit:
 - \(X_L\) = induktiver Widerstand  
 - \(L\) = Induktivität  
 - \(\omega = 2\pi f\)
+
+---
 
 ### Verhalten
 
@@ -220,11 +219,13 @@ $$
 **Wechselstrom:**
 → Stromänderung erzeugt eine Gegenspannung (Selbstinduktion)
 
+---
+
 ### Warum größer bei Wechselspannung?
 
-- Wechselstrom ändert sich ständig
-- Spule erzeugt ein Magnetfeld, das die Änderung „bremst“
-- je schneller die Änderung (höhere Frequenz), desto stärker die Gegenwirkung
+- Wechselstrom ändert sich ständig  
+- Spule erzeugt ein Magnetfeld, das die Änderung „bremst“  
+- je höher die Frequenz, desto stärker die Gegenwirkung  
 
 $$
 X_L \propto f
@@ -243,6 +244,8 @@ mit:
 - \(C\) = Kapazität  
 - \(\omega = 2\pi f\)
 
+---
+
 ### Verhalten
 
 **Gleichstrom (f = 0):**
@@ -254,10 +257,12 @@ $$
 **Wechselstrom:**
 → Kondensator lädt und entlädt sich ständig → Stromfluss möglich
 
+---
+
 ### Warum kleiner bei hoher Frequenz?
 
-- bei hoher Frequenz lädt der Kondensator sehr schnell
-- dadurch kann mehr Strom fließen
+- bei hoher Frequenz lädt der Kondensator sehr schnell  
+- dadurch kann mehr Strom fließen  
 
 $$
 X_C \propto \frac{1}{f}
@@ -265,7 +270,7 @@ $$
 
 ---
 
-## 4. Rolle der Kreisfrequenz
+## 4. Kreisfrequenz
 
 $$
 \omega = 2\pi f
@@ -273,7 +278,9 @@ $$
 
 Die Kreisfrequenz beschreibt, wie schnell sich das Signal ändert.
 
-## Auswirkungen:
+---
+
+### Auswirkungen
 
 **Spule:**
 $$
@@ -286,6 +293,3 @@ $$
 X_C = \frac{1}{\omega C}
 $$
 → sinkt mit Frequenz
-
----
-
