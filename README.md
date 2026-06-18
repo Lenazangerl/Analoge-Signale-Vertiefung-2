@@ -180,7 +180,7 @@ Auch hier wird der Spitzenwert nur kurz erreicht → gleicher Effektivwert wie D
 
 ---
 
-**Kondensatoren und Spulen werden in der Wechselstromtechnik als Widerstände eingesetzt. Beschreibe die drei verschiedenen Widerstandsarten bei einer sinusförmigen Wechselspannung. Warum ist zum Beispiel der Widerstand einer Spule an Sinusspannungen größer als bei Gleichspannung?**
+**Kondensatoren und Spulen werden in der Wechselstromtechnik als Widerstände eingesetzt. Beschreibe die drei verschiedenen Widerstandsarten bei einer sinusförmigen Wechselspannung. Warum ist zum Beispiel der Widerstand einer Spule an Sinusspannungen größer als bei Gleichspannung? Wie berechnet man diese Widerstände und wieso spielt die Kreisfrequenz hier eine Rolle?**
 
 ## 1. Ohmscher Widerstand (R)
 
@@ -199,32 +199,29 @@ $$
 
 ## 2. Induktiver Widerstand (Spule)
 
-
-::contentReference[oaicite:0]{index=0}
-
-
 $$
 X_L = \omega L
 $$
 
 mit:
-- \(X_L\) = induktiver Widerstand
-- \(L\) = Induktivität
+- \(X_L\) = induktiver Widerstand  
+- \(L\) = Induktivität  
 - \(\omega = 2\pi f\)
 
 ### Verhalten
-- bei **Gleichstrom (f = 0):**
-  $$
-  X_L = 0
-  $$
-  → Spule wirkt wie ein normaler Leiter
 
-- bei **Wechselstrom:**
-  → Stromänderung erzeugt Gegenspannung (Selbstinduktion)
+**Gleichstrom (f = 0):**
+$$
+X_L = 0
+$$
+→ Spule wirkt wie ein normaler Leiter
+
+**Wechselstrom:**
+→ Stromänderung erzeugt Gegenspannung (Selbstinduktion)
 
 ### Warum wird er bei AC größer?
 
-Je schneller sich der Strom ändert (höhere Frequenz), desto stärker ist die Gegeninduktion:
+Je höher die Frequenz, desto schneller ändert sich der Strom:
 
 $$
 X_L \propto f
@@ -239,23 +236,22 @@ X_C = \frac{1}{\omega C}
 $$
 
 mit:
-- \(X_C\) = kapazitiver Widerstand
-- \(C\) = Kapazität
+- \(X_C\) = kapazitiver Widerstand  
+- \(C\) = Kapazität  
 - \(\omega = 2\pi f\)
 
 ### Verhalten
-- bei **Gleichstrom (f = 0):**
-  $$
-  X_C \rightarrow \infty
-  $$
-  → Kondensator blockiert Strom
 
-- bei **Wechselstrom:**
-  → ständiges Laden und Entladen ermöglicht Stromfluss
+**Gleichstrom (f = 0):**
+$$
+X_C \rightarrow \infty
+$$
+→ Kondensator blockiert Gleichstrom
+
+**Wechselstrom:**
+→ ständiges Laden und Entladen → Strom kann fließen
 
 ### Warum wird er bei hoher Frequenz kleiner?
-
-Je schneller die Spannung wechselt, desto schneller lädt/entlädt der Kondensator:
 
 $$
 X_C \propto \frac{1}{f}
@@ -263,28 +259,27 @@ $$
 
 ---
 
-## Warum spielt die Kreisfrequenz eine Rolle?
+## 4. Kreisfrequenz
 
 $$
 \omega = 2\pi f
 $$
 
-Die Kreisfrequenz beschreibt, wie schnell sich das Signal ändert.
+### Bedeutung
+- beschreibt wie schnell sich das Signal ändert
 
-- hohe Frequenz → schnelle Änderung
-- niedrige Frequenz → langsame Änderung
+### Auswirkungen
 
-### Auswirkungen:
+Spule:
+$$
+X_L = \omega L
+$$
 
-- Spule:
-  $$
-  X_L = \omega L \Rightarrow steigt mit f
-  $$
-
-- Kondensator:
-  $$
-  X_C = \frac{1}{\omega C} \Rightarrow sinkt mit f
-  $$
+Kondensator:
+$$
+X_C = \frac{1}{\omega C}
+$$
 
 ---
+
 
