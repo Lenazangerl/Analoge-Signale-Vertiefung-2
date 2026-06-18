@@ -84,88 +84,98 @@ Der Effektivwert eines Sägezahnsignals entspricht dem eines Dreiecksignals.
 
 ## 1. Sinussignal
 
-\[
+$$
 U_\mathrm{eff}=\frac{\hat U}{\sqrt{2}}
-\]
+$$
 
 Einsetzen:
 
-\[
+$$
 U_\mathrm{eff}=\frac{5}{\sqrt{2}}
-\]
+$$
 
-\[
+$$
 U_\mathrm{eff}=\frac{5}{1{,}414}
-\]
+$$
 
-\[
+$$
 U_\mathrm{eff}\approx 3{,}54\ \text{V}
-\]
+$$
 
 **Warum?**  
-Das Signal ist oft klein und erreicht nur kurz den Spitzenwert → daher kleiner Mittelwert.
+Der Sinus erreicht den Spitzenwert nur kurz → der Mittelwert der Leistung ist kleiner.
 
 ---
 
 ## 2. Rechtecksignal
 
-\[
+$$
 U_\mathrm{eff}=\hat U
-\]
+$$
 
 Einsetzen:
 
-\[
+$$
 U_\mathrm{eff}=5\ \text{V}
-\]
+$$
+
+**Ergebnis:**
+
+$$
+U_\mathrm{eff}=5{,}00\ \text{V}
+$$
 
 **Warum?**  
-Die Spannung ist konstant bei 5 V (keine Schwankung) → keine „Verluste“ im Mittelwert.
+Die Spannung ist konstant → keine Schwankung → volle Leistung die ganze Zeit.
 
 ---
 
 ## 3. Dreiecksignal
 
-\[
+$$
 U_\mathrm{eff}=\frac{\hat U}{\sqrt{3}}
-\]
+$$
 
 Einsetzen:
 
-\[
+$$
 U_\mathrm{eff}=\frac{5}{\sqrt{3}}
-\]
+$$
 
-\[
+$$
 U_\mathrm{eff}=\frac{5}{1{,}732}
-\]
+$$
 
-\[
+$$
 U_\mathrm{eff}\approx 2{,}89\ \text{V}
-\]
+$$
 
 **Warum?**  
-Die Spannung steigt und fällt gleichmäßig → der Mittelwert der Quadrate ist deutlich kleiner.
+Linearer Anstieg und Abfall → viele kleine Werte, daher geringerer Effektivwert.
 
 ---
 
 ## 4. Sägezahnsignal
 
-\[
+$$
 U_\mathrm{eff}=\frac{\hat U}{\sqrt{3}}
-\]
+$$
 
 Einsetzen:
 
-\[
-U_\mathrm{eff}=\frac{5}{\sqrt{3}} \approx 2{,}89\ \text{V}
-\]
+$$
+U_\mathrm{eff}=\frac{5}{\sqrt{3}}
+$$
+
+$$
+U_\mathrm{eff}=\frac{5}{1{,}732}
+$$
+
+$$
+U_\mathrm{eff}\approx 2{,}89\ \text{V}
+$$
 
 **Warum?**  
-Auch hier wird der Spitzenwert nur kurz erreicht → ähnlich wie Dreiecksignal.
+Auch hier wird der Spitzenwert nur kurz erreicht → gleicher Effektivwert wie Dreieck.
 
 ---
-
-
-
-
