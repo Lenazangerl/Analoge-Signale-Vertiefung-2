@@ -3,11 +3,7 @@
 
 Der **Effektivwert** ist der Wert einer Wechselspannung oder eines Wechselstroms, der die gleiche Leistung erzeugt wie eine gleich große Gleichspannung bzw. ein gleich großer Gleichstrom.
 
-## Allgemeine Formel
-
-$$
-X_{\mathrm{eff}} = \sqrt{\frac{1}{T}\int_0^T x^2(t)\,dt}
-$$
+Wechselspannung ändert sich ständig von + zu - der durchschnitt wäre null (Sinus), um diesen mit einer gleichspannung (konstant), zu vergleichen braucht man einen durschnittswert. Daher bildet man den Effektivwert.
 
 **Erklärung:**
 - **X_eff** = Effektivwert
@@ -84,18 +80,92 @@ Der Effektivwert eines Sägezahnsignals entspricht dem eines Dreiecksignals.
 
 ---
 
-## Übersicht
+## Erstelle vier Funktionsdiagramme und nehme dabei an, dass der Spitzenwert 5V beträgt. Berechne daneben immer den Effektivwert und erläutere in kurzen Worten oder mit grafischen Hilfsmitteln, wie das Ergebnis zustande kommt.
 
-| Signaltyp | Formel |
-|-----------|--------|
-| Sinus | $$U_{\mathrm{eff}}=\frac{\hat{U}}{\sqrt{2}}$$ |
-| Rechteck | $$U_{\mathrm{eff}}=\hat{U}$$ |
-| Dreieck | $$U_{\mathrm{eff}}=\frac{\hat{U}}{\sqrt{3}}$$ |
-| Sägezahn | $$U_{\mathrm{eff}}=\frac{\hat{U}}{\sqrt{3}}$$ |
+## 1. Sinussignal
 
-## Merksatz
+\[
+U_\mathrm{eff}=\frac{\hat U}{\sqrt{2}}
+\]
 
-- **Sinus:** durch **√2** teilen.
-- **Rechteck:** Effektivwert = Scheitelwert.
-- **Dreieck und Sägezahn:** durch **√3** teilen.
-- **Allgemein:** **Quadrieren → Mittelwert bilden → Quadratwurzel ziehen.**
+Einsetzen:
+
+\[
+U_\mathrm{eff}=\frac{5}{\sqrt{2}}
+\]
+
+\[
+U_\mathrm{eff}=\frac{5}{1{,}414}
+\]
+
+\[
+U_\mathrm{eff}\approx 3{,}54\ \text{V}
+\]
+
+**Warum?**  
+Das Signal ist oft klein und erreicht nur kurz den Spitzenwert → daher kleiner Mittelwert.
+
+---
+
+## 2. Rechtecksignal
+
+\[
+U_\mathrm{eff}=\hat U
+\]
+
+Einsetzen:
+
+\[
+U_\mathrm{eff}=5\ \text{V}
+\]
+
+**Warum?**  
+Die Spannung ist konstant bei 5 V (keine Schwankung) → keine „Verluste“ im Mittelwert.
+
+---
+
+## 3. Dreiecksignal
+
+\[
+U_\mathrm{eff}=\frac{\hat U}{\sqrt{3}}
+\]
+
+Einsetzen:
+
+\[
+U_\mathrm{eff}=\frac{5}{\sqrt{3}}
+\]
+
+\[
+U_\mathrm{eff}=\frac{5}{1{,}732}
+\]
+
+\[
+U_\mathrm{eff}\approx 2{,}89\ \text{V}
+\]
+
+**Warum?**  
+Die Spannung steigt und fällt gleichmäßig → der Mittelwert der Quadrate ist deutlich kleiner.
+
+---
+
+## 4. Sägezahnsignal
+
+\[
+U_\mathrm{eff}=\frac{\hat U}{\sqrt{3}}
+\]
+
+Einsetzen:
+
+\[
+U_\mathrm{eff}=\frac{5}{\sqrt{3}} \approx 2{,}89\ \text{V}
+\]
+
+**Warum?**  
+Auch hier wird der Spitzenwert nur kurz erreicht → ähnlich wie Dreiecksignal.
+
+---
+
+
+
+
