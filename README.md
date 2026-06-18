@@ -1,358 +1,126 @@
-# Analoge-Signale-Vertiefung-2
----
+# Analoge Signale & Wechselstromtechnik: Vertiefung
 
-Der **Effektivwert** ist der Wert einer Wechselspannung oder eines Wechselstroms, der die gleiche Leistung erzeugt wie eine gleich große Gleichspannung bzw. ein gleich großer Gleichstrom.
+Der **Effektivwert** ($U_{\mathrm{eff}}$ bzw. $I_{\mathrm{eff}}$) beschreibt den Wert einer Wechselspannung oder eines Wechselstroms, der an einem ohmschen Widerstand im zeitlichen Mittel die gleiche elektrische Leistung (Wärmeenergie) erzeugt wie eine gleich große Gleichspannung oder ein gleich großer Gleichstrom.
 
-Wechselspannung ändert sich ständig von + zu - der durchschnitt wäre null (Sinus), um diesen mit einer gleichspannung (konstant), zu vergleichen braucht man einen durschnittswert. Daher bildet man den Effektivwert.
-
-**Erklärung:**
-- **X_eff** = Effektivwert
-- **T** = Periodendauer
-- **x(t)** = Momentanwert des Signals
-
-Zur Berechnung wird:
-1. Jeder Momentanwert quadriert.
-2. Der Mittelwert über eine Periode berechnet.
-3. Die Quadratwurzel gezogen.
+> **Hintergrund:** Da sich periodische Wechselspannungen kontinuierlich zwischen positiven und negativen Werten bewegen, beträgt ihr linearer Mittelwert über eine vollständige Periode exakt null. Um die energetische Wirkung dennoch vergleichen zu können, nutzt man das mathematische RMS-Verfahren (*Root Mean Square*):
+> 1. Quadrieren der Momentanwerte des Signals $x(t)$ (negative Werte werden positiv).
+> 2. Mittelwertbildung über die Periodendauer $T$.
+> 3. Ziehen der Quadratwurzel aus diesem Mittelwert.
 
 ---
 
-## Sinussignal
+## 1. Signalformen und Effektivwertberechnung ($\hat{U} = 5\,\text{V}$)
 
+Nachfolgend sind die Berechnungen für vier grundlegende Signalformen bei einem Spitzenwert von $\hat{U} = 5\,\text{V}$ aufgeführt.
+
+### A. Sinussignal
 **Formel:**
+$$U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{2}}$$
 
-$$
-U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{2}}
-$$
-
-oder
-
-$$
-I_{\mathrm{eff}} = \frac{\hat{I}}{\sqrt{2}}
-$$
+**Berechnung:**
+$$U_{\mathrm{eff}} = \frac{5\,\text{V}}{\sqrt{2}} \approx \frac{5}{1{,}414} \approx 3{,}54\,\text{V}$$
 
 **Erklärung:**
-- **Û** = Scheitelwert (Spitzenwert)
-- **Î** = Scheitelwert des Stroms
-- √2 ≈ 1,414
+Die Sinuswelle erreicht ihren Spitzenwert von $5\,\text{V}$ innerhalb einer Periode nur sehr kurzzeitig im Scheitelpunkt. Da die Spannung kontinuierlich ab- und aufbaut, liegt der Leistungseffekt im zeitlichen Mittel deutlich unter dem Spitzenwert.
+
+*[Platzhalter: Labor-Oszilloskop-Diagramm des Sinussignals]*
 
 ---
 
-## Rechtecksignal
-
+### B. Rechtecksignal (symmetrisch)
 **Formel:**
+$$U_{\mathrm{eff}} = \hat{U}$$
 
-$$
-U_{\mathrm{eff}} = \hat{U}
-$$
+**Berechnung:**
+$$U_{\mathrm{eff}} = 5{,}00\,\text{V}$$
 
 **Erklärung:**
+Das ideale Rechtecksignal schaltet instantan zwischen $+5\,\text{V}$ und $-5\,\text{V}$ um. Da der Betrag der Spannung zu jedem Zeitpunkt konstant $5\,\text{V}$ ist ($5^2 = (-5)^2 = 25$), ist die Leistungsabgabe durchgehend maximal. Der Effektivwert entspricht genau dem Scheitelwert.
 
-Das Signal besitzt während der gesamten Periode den gleichen Betrag. Daher ist der Effektivwert gleich dem Scheitelwert.
+*[Platzhalter: Labor-Oszilloskop-Diagramm des Rechtecksignals]*
 
 ---
 
-## Dreiecksignal
-
+### C. Dreiecksignal
 **Formel:**
+$$U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{3}}$$
 
-$$
-U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{3}}
-$$
+**Berechnung:**
+$$U_{\mathrm{eff}} = \frac{5\,\text{V}}{\sqrt{3}} \approx \frac{5}{1{,}732} \approx 2{,}89\,\text{V}$$
 
 **Erklärung:**
+Durch den rein linearen, gleichmäßigen Anstieg und Abfall verweilt das Signal mathematisch gesehen viel Zeit in der Nähe des Nullpunkts. Da kleine Werte im Quadrat noch kleiner gewichtet werden, fällt der Effektivwert geringer aus als beim harmonischen Sinussignal.
 
-Da das Signal gleichmäßig ansteigt und wieder abfällt, ist der Effektivwert kleiner als beim Sinussignal.
+*[Platzhalter: Labor-Oszilloskop-Diagramm des Dreiecksignals]*
 
 ---
 
-## Sägezahnsignal
-
+### D. Sägezahnsignal
 **Formel:**
+$$U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{3}}$$
 
-$$
-U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{3}}
-$$
+**Berechnung:**
+$$U_{\mathrm{eff}} = \frac{5\,\text{V}}{\sqrt{3}} \approx \frac{5}{1{,}732} \approx 2{,}89\,\text{V}$$
 
 **Erklärung:**
+Obwohl die Kurvenform optisch asymmetrisch ist (linearer Anstieg gefolgt von einem steilen Abfall), ist die mathematische Verteilung aller Amplitudenwerte innerhalb einer Periode identisch mit der des Dreiecksignals. Daher ergibt sich exakt derselbe Effektivwert.
 
-Der Effektivwert eines Sägezahnsignals entspricht dem eines Dreiecksignals.
-
----
-
-**Erstelle vier Funktionsdiagramme und nehme dabei an, dass der Spitzenwert 5V beträgt. Berechne daneben immer den Effektivwert und erläutere in kurzen Worten oder mit grafischen Hilfsmitteln, wie das Ergebnis zustande kommt.**
-
-## 1. Sinussignal
-
-$$
-U_\mathrm{eff}=\frac{\hat U}{\sqrt{2}}
-$$
-
-Einsetzen:
-
-$$
-U_\mathrm{eff}=\frac{5}{\sqrt{2}}
-$$
-
-$$
-U_\mathrm{eff}=\frac{5}{1{,}414}
-$$
-
-$$
-U_\mathrm{eff}\approx 3{,}54\ \text{V}
-$$
-
-**Warum?**  
-Der Sinus erreicht den Spitzenwert nur kurz → der Mittelwert der Leistung ist kleiner.
+*[Platzhalter: Labor-Oszilloskop-Diagramm des Sägezahnsignals]*
 
 ---
 
-## 2. Rechtecksignal
+## 2. Widerstandsarten in der Wechselstromtechnik
 
-$$
-U_\mathrm{eff}=\hat U
-$$
+In der Wechselstromtechnik wird der klassische Widerstandsbegriff erweitert, da Energiespeicher (Kondensatoren und Spulen) den Stromfluss frequenzabhängig beeinflussen.
 
-Einsetzen:
+| Widerstandsart | Formelzeichen / Berechnung | Verhalten bei Gleichstrom (DC, $f = 0\,\text{Hz}$) | Verhalten bei Wechselstrom (AC) |
+| :--- | :--- | :--- | :--- |
+| **Ohmscher Widerstand** | $R = \frac{U}{I}$ | Konstanter Widerstand. Wandelt elektrische Energie unumkehrbar in Wärme um. | Frequenzunabhängig. Strom und Spannung verlaufen absolut phasengleich. |
+| **Induktiver Blindwiderstand** (Spule) | $X_L = \omega \cdot L = 2\pi f \cdot L$ | $X_L = 0\,\Omega$<br>Wirkt nach dem Einschalten wie ein idealer Kurzschluss/Leiter. | Proportional zur Frequenz. Erzeugt eine Phasenverschiebung (Strom eilt der Spannung nach). |
+| **Kapazitiver Blindwiderstand** (Kondensator) | $X_C = \frac{1}{\omega \cdot C} = \frac{1}{2\pi f \cdot C}$ | $X_C \rightarrow \infty\,\Omega$<br>Wirkt im geladenen Zustand wie eine dauerhafte Leitungsunterbrechung. | Antiproportional zur Frequenz. Führt zu einer Phasenvoreilung des Stroms. |
 
-$$
-U_\mathrm{eff}=5\ \text{V}
-$$
+### Warum ist der Widerstand einer Spule an Sinusspannungen größer als bei Gleichspannung?
+Ein sinusförmiger Wechselstrom ändert kontinuierlich seine Stärke und Richtung. Nach dem **Lenzschen Gesetz** induziert jede Stromänderung in einer Spule eine Gegenspannung (Selbstinduktion), welche ihrer Ursache – der Stromänderung – entgegenwirkt. Je schneller sich der Strom ändert (also je höher die Frequenz $f$ bzw. Kreisfrequenz $\omega$ ist), desto intensiver ist diese induzierte Gegenspannung. Bei Gleichstrom findet nach dem Einschwingvorgang keine Stromänderung mehr statt, weshalb die Gegenwirkung verschwindet und nur der minimale ohmsche Drahtwiderstand wirksam bleibt.
 
-**Ergebnis:**
-
-$$
-U_\mathrm{eff}=5{,}00\ \text{V}
-$$
-
-**Warum?**  
-Die Spannung ist konstant → keine Schwankung → volle Leistung die ganze Zeit.
+### Die Rolle der Kreisfrequenz ($\omega$)
+Die Kreisfrequenz $\omega = 2\pi f$ beschreibt die Winkelgeschwindigkeit der Zeigerrotation und repräsentiert die zeitliche Änderungsrate des Signals in Radiant pro Sekunde. Sie fließt direkt in die Berechnung ein, weil die Blindwiderstände dynamische Reaktionen auf die *Änderungsgeschwindigkeit* des Stroms (Spule) bzw. der Spannung (Kondensator) darstellen.
 
 ---
 
-## 3. Dreiecksignal
+## 3. Modulation in der Nachrichtentechnik
 
-$$
-U_\mathrm{eff}=\frac{\hat U}{\sqrt{3}}
-$$
+Unter **Modulation** versteht man den Vorgang, bei dem ein niederfrequentes Nutzsignal (Information wie Audio oder Daten) einen Parameter eines hochfrequenten Trägersignals gezielt verändert. Dies ist notwendig, da niederfrequente Signale aufgrund physikalischer Gesetze (z. B. erforderliche Antennenlänge) nicht direkt über weite Strecken effizient übertragen werden können.
 
-Einsetzen:
-
-$$
-U_\mathrm{eff}=\frac{5}{\sqrt{3}}
-$$
-
-$$
-U_\mathrm{eff}=\frac{5}{1{,}732}
-$$
-
-$$
-U_\mathrm{eff}\approx 2{,}89\ \text{V}
-$$
-
-**Warum?**  
-Linearer Anstieg und Abfall → viele kleine Werte, daher geringerer Effektivwert.
+Ein sinusförmiger Träger besitzt drei primäre Parameter, die moduliert werden können:
+1. **Amplitudenmodulation (AM):** Das Nutzsignal verändert die Höhe (Amplitude) des Trägersignals. Anfällig für atmosphärische Störungen (Rauschen).
+2. **Frequenzmodulation (FM):** Das Nutzsignal verändert die zeitliche Frequenz des Trägers. Sehr robust gegenüber Störungen (z. B. UKW-Radio).
+3. **Phasenmodulation (PM):** Das Nutzsignal verändert den aktuellen Phasenwinkel des Trägers. Bildet das Fundament moderner, digitaler Übertragungsverfahren (WLAN, LTE, 5G).
 
 ---
 
-## 4. Sägezahnsignal
+## 4. Tiefpassfilter und Grenzfrequenz
 
-$$
-U_\mathrm{eff}=\frac{\hat U}{\sqrt{3}}
-$$
+Ein RC-Tiefpass lässt Signale mit Frequenzen unterhalb seiner Grenzfrequenz $f_g$ nahezu ungeschwächt passieren, während höhere Frequenzen gedämpft werden. Die Berechnung der Grenzfrequenz erfolgt über die Formel:
 
-Einsetzen:
+$$f_g = \frac{1}{2\pi \cdot R \cdot C}$$
 
-$$
-U_\mathrm{eff}=\frac{5}{\sqrt{3}}
-$$
+### Dimensionierung einer Schaltung für $f_g = 1\,\text{kHz}$
+Um eine Grenzfrequenz von genau $1\,\text{kHz}$ ($1000\,\text{Hz}$) zu realisieren, wählen wir einen Standardwert für den Kondensator und berechnen den dazu passenden Widerstand:
+* **Gewählt:** Kapazität $C = 100\,\text{nF} = 100 \cdot 10^{-9}\,\text{F}$
+* **Berechnung des Widerstands $R$:**
 
-$$
-U_\mathrm{eff}=\frac{5}{1{,}732}
-$$
+$$R = \frac{1}{2\pi \cdot f_g \cdot C} = \frac{1}{2\pi \cdot 1000\,\text{Hz} \cdot 100 \cdot 10^{-9}\,\text{F}} \approx 1591{,}55\,\Omega$$
+* **Bauteilauswahl:** Es wird ein Widerstand von **$1{,}59\,\text{k}\Omega$** (bzw. ein $1{,}5\,\text{k}\Omega$ in Reihe mit einem $91\,\Omega$ Widerstand) verwendet.
 
-$$
-U_\mathrm{eff}\approx 2{,}89\ \text{V}
-$$
+### Tinkercad-Versuchsaufbau und Überprüfung
+Zur Überprüfung der Schaltung wird in Tinkercad folgende Schaltung simuliert:
+1. Ein **Funktionsgenerator** wird an den Eingang der Schaltung angeschlossen (Sinuswelle, Amplitude: $5\,\text{V}$).
+2. Ein **Widerstand mit $R = 1{,}59\,\text{k}\Omega$** wird in Reihe zum Signalweg geschaltet.
+3. Ein **Kondensator mit $C = 100\,\text{nF}$** wird nach dem Widerstand gegen Masse (GND) geschaltet.
+4. Ein **Oszilloskop** greift die Ausgangsspannung parallel am Kondensator ab.
 
-**Warum?**  
-Auch hier wird der Spitzenwert nur kurz erreicht → gleicher Effektivwert wie Dreieck.
+**Verhalten bei der Überprüfung:** * Speist man eine niedrige Frequenz von $100\,\text{Hz}$ ein, bleibt die Ausgangsamplitude nahezu unverändert bei knapp $5\,\text{V}$.
+* Erhöht man die Frequenz exakt auf die berechnete Grenzfrequenz von $1\,\text{kHz}$, sinkt die Ausgangsspannung auf genau **$70{,}7\,\%$** des Eingangswertes (Dämpfung um $-3\,\text{dB}$, was exakt $U_{\mathrm{eff}} = \frac{U_{\mathrm{in}}}{\sqrt{2}}$ entspricht) und zeigt eine Phasenverschiebung von $-45^\circ$.
+* Bei Frequenzen weit über $1\,\text{kHz}$ (z. B. $10\,\text{kHz}$) bricht die Ausgangsspannung am Oszilloskop fast vollständig ein.
 
----
-
-**Kondensatoren und Spulen werden in der Wechselstromtechnik als Widerstände eingesetzt. Beschreibe die drei verschiedenen Widerstandsarten bei einer sinusförmigen Wechselspannung. Warum ist zum Beispiel der Widerstand einer Spule an Sinusspannungen größer als bei Gleichspannung? Wie berechnet man diese Widerstände und wieso spielt die Kreisfrequenz hier eine Rolle?**
-
-## 1. Ohmscher Widerstand (R)
-
-$$
-R = \frac{U}{I}
-$$
-
-### Eigenschaften
-- gilt für Gleich- und Wechselstrom gleich
-- unabhängig von der Frequenz
-- elektrische Energie wird in Wärme umgewandelt
-
----
-
-## 2. Induktiver Widerstand (Spule)
-
-$$
-X_L = \omega L
-$$
-
-mit:
-- \(X_L\) = induktiver Widerstand  
-- \(L\) = Induktivität  
-- \(\omega = 2\pi f\)
-
----
-
-### Verhalten
-
-**Gleichstrom (f = 0):**
-$$
-X_L = 0
-$$
-→ Spule wirkt wie ein normaler Leiter
-
-**Wechselstrom:**
-→ Stromänderung erzeugt eine Gegenspannung (Selbstinduktion)
-
----
-
-### Warum größer bei Wechselspannung?
-
-- Wechselstrom ändert sich ständig  
-- Spule erzeugt ein Magnetfeld, das die Änderung „bremst“  
-- je höher die Frequenz, desto stärker die Gegenwirkung  
-
-$$
-X_L \propto f
-$$
-
----
-
-## 3. Kapazitiver Widerstand (Kondensator)
-
-$$
-X_C = \frac{1}{\omega C}
-$$
-
-mit:
-- \(X_C\) = kapazitiver Widerstand  
-- \(C\) = Kapazität  
-- \(\omega = 2\pi f\)
-
----
-
-### Verhalten
-
-**Gleichstrom (f = 0):**
-$$
-X_C \rightarrow \infty
-$$
-→ Kondensator blockiert Gleichstrom
-
-**Wechselstrom:**
-→ Kondensator lädt und entlädt sich ständig → Stromfluss möglich
-
----
-
-### Warum kleiner bei hoher Frequenz?
-
-- bei hoher Frequenz lädt der Kondensator sehr schnell  
-- dadurch kann mehr Strom fließen  
-
-$$
-X_C \propto \frac{1}{f}
-$$
-
----
-
-## 4. Kreisfrequenz
-
-$$
-\omega = 2\pi f
-$$
-
-Die Kreisfrequenz beschreibt, wie schnell sich das Signal ändert.
-
----
-
-### Auswirkungen
-
-**Spule:**
-$$
-X_L = \omega L
-$$
-→ steigt mit Frequenz
-
-**Kondensator:**
-$$
-X_C = \frac{1}{\omega C}
-$$
-→ sinkt mit Frequenz
-
----
-
-# In der Nachrichtentechnik wird der Begriff Modulation verwendet, um welche Vorgänge zu beschreiben? Welche drei Parameter werden dabei angepasst?
-
-## Was bedeutet Modulation?
-
-In der Nachrichtentechnik bedeutet **Modulation**, dass ein **hochfrequentes Trägersignal verändert wird**, damit ein **Nutzsignal (z. B. Sprache, Musik, Daten)** übertragen werden kann.
-
----
-
-## Welche Vorgänge beschreibt Modulation?
-
-Modulation beschreibt die gezielte Veränderung eines Trägersignals durch ein Nutzsignal, damit dieses über große Entfernungen übertragen werden kann (z. B. Radio, WLAN, Mobilfunk).
-
----
-
-## Die 3 veränderbaren Parameter
-
-Eine sinusförmige Trägerwelle kann über drei Eigenschaften verändert werden:
-
----
-
-## 1. Amplitudenmodulation (AM)
-
-Die **Amplitude (Signalhöhe)** wird verändert.
-
-$$
-A(t)
-$$
-
-Beispiel:
-- Mittelwellenradio (AM)
-
----
-
-## 2. Frequenzmodulation (FM)
-
-Die **Frequenz** wird verändert.
-
-$$
-f(t)
-$$
-
-Beispiel:
-- UKW-Radio (FM)
-
----
-
-## 3. Phasenmodulation (PM)
-
-Die **Phase** wird verändert.
-
-$$
-\varphi(t)
-$$
-
-Beispiel:
-- digitale Übertragung (z. B. WLAN, Mobilfunk)
-
----
-
-
+*[Platzhalter: Screenshot der aufgebauten Tiefpass-Schaltung aus Tinkercad bei 1 kHz]*
