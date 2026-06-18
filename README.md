@@ -23,7 +23,8 @@ $$U_{\mathrm{eff}} = \frac{5\,\text{V}}{\sqrt{2}} \approx \frac{5}{1{,}414} \app
 **Erklärung:**
 Die Sinuswelle erreicht ihren Spitzenwert von $5\,\text{V}$ innerhalb einer Periode nur sehr kurzzeitig im Scheitelpunkt. Da die Spannung kontinuierlich ab- und aufbaut, liegt der Leistungseffekt im zeitlichen Mittel deutlich unter dem Spitzenwert.
 
-*[Platzhalter: Labor-Oszilloskop-Diagramm des Sinussignals]*
+<img width="593" height="242" alt="image" src="https://github.com/user-attachments/assets/143f9d29-22e6-4856-b46c-67f675787325" />
+
 
 ---
 
@@ -37,7 +38,7 @@ $$U_{\mathrm{eff}} = 5{,}00\,\text{V}$$
 **Erklärung:**
 Das ideale Rechtecksignal schaltet instantan zwischen $+5\,\text{V}$ und $-5\,\text{V}$ um. Da der Betrag der Spannung zu jedem Zeitpunkt konstant $5\,\text{V}$ ist ($5^2 = (-5)^2 = 25$), ist die Leistungsabgabe durchgehend maximal. Der Effektivwert entspricht genau dem Scheitelwert.
 
-*[Platzhalter: Labor-Oszilloskop-Diagramm des Rechtecksignals]*
+<img width="588" height="221" alt="image" src="https://github.com/user-attachments/assets/46f9e4af-25df-40fa-ad5b-0935cf316451" />
 
 ---
 
@@ -51,7 +52,7 @@ $$U_{\mathrm{eff}} = \frac{5\,\text{V}}{\sqrt{3}} \approx \frac{5}{1{,}732} \app
 **Erklärung:**
 Durch den rein linearen, gleichmäßigen Anstieg und Abfall verweilt das Signal mathematisch gesehen viel Zeit in der Nähe des Nullpunkts. Da kleine Werte im Quadrat noch kleiner gewichtet werden, fällt der Effektivwert geringer aus als beim harmonischen Sinussignal.
 
-*[Platzhalter: Labor-Oszilloskop-Diagramm des Dreiecksignals]*
+<img width="593" height="226" alt="image" src="https://github.com/user-attachments/assets/5fdb5ecf-d366-41f7-8b1c-2ef4aa93e88d" />
 
 ---
 
@@ -65,7 +66,7 @@ $$U_{\mathrm{eff}} = \frac{5\,\text{V}}{\sqrt{3}} \approx \frac{5}{1{,}732} \app
 **Erklärung:**
 Obwohl die Kurvenform optisch asymmetrisch ist (linearer Anstieg gefolgt von einem steilen Abfall), ist die mathematische Verteilung aller Amplitudenwerte innerhalb einer Periode identisch mit der des Dreiecksignals. Daher ergibt sich exakt derselbe Effektivwert.
 
-*[Platzhalter: Labor-Oszilloskop-Diagramm des Sägezahnsignals]*
+<img width="572" height="241" alt="image" src="https://github.com/user-attachments/assets/c2fd4ef4-6708-4894-8929-d53a137c6351" />
 
 ---
 
@@ -123,4 +124,5 @@ Zur Überprüfung der Schaltung wird in Tinkercad folgende Schaltung simuliert:
 * Erhöht man die Frequenz exakt auf die berechnete Grenzfrequenz von $1\,\text{kHz}$, sinkt die Ausgangsspannung auf genau **$70{,}7\,\%$** des Eingangswertes (Dämpfung um $-3\,\text{dB}$, was exakt $U_{\mathrm{eff}} = \frac{U_{\mathrm{in}}}{\sqrt{2}}$ entspricht) und zeigt eine Phasenverschiebung von $-45^\circ$.
 * Bei Frequenzen weit über $1\,\text{kHz}$ (z. B. $10\,\text{kHz}$) bricht die Ausgangsspannung am Oszilloskop fast vollständig ein.
 
-*[Platzhalter: Screenshot der aufgebauten Tiefpass-Schaltung aus Tinkercad bei 1 kHz]*
+<img width="673" height="401" alt="image" src="https://github.com/user-attachments/assets/63ab2abb-7f90-461c-97d9-1ad76abbea1f" />
+
