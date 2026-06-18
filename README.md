@@ -80,7 +80,7 @@ Der Effektivwert eines Sägezahnsignals entspricht dem eines Dreiecksignals.
 
 ---
 
-## Erstelle vier Funktionsdiagramme und nehme dabei an, dass der Spitzenwert 5V beträgt. Berechne daneben immer den Effektivwert und erläutere in kurzen Worten oder mit grafischen Hilfsmitteln, wie das Ergebnis zustande kommt.
+**Erstelle vier Funktionsdiagramme und nehme dabei an, dass der Spitzenwert 5V beträgt. Berechne daneben immer den Effektivwert und erläutere in kurzen Worten oder mit grafischen Hilfsmitteln, wie das Ergebnis zustande kommt.**
 
 ## 1. Sinussignal
 
@@ -179,3 +179,112 @@ $$
 Auch hier wird der Spitzenwert nur kurz erreicht → gleicher Effektivwert wie Dreieck.
 
 ---
+
+**Kondensatoren und Spulen werden in der Wechselstromtechnik als Widerstände eingesetzt. Beschreibe die drei verschiedenen Widerstandsarten bei einer sinusförmigen Wechselspannung. Warum ist zum Beispiel der Widerstand einer Spule an Sinusspannungen größer als bei Gleichspannung?**
+
+## 1. Ohmscher Widerstand (R)
+
+Das ist der normale elektrische Widerstand (z. B. Draht, Heizwiderstand).
+
+$$
+R = \frac{U}{I}
+$$
+
+### Eigenschaften
+- gilt für Gleich- und Wechselstrom gleich
+- unabhängig von der Frequenz
+- Energie wird in Wärme umgewandelt
+
+---
+
+## 2. Induktiver Widerstand (Spule)
+
+
+::contentReference[oaicite:0]{index=0}
+
+
+$$
+X_L = \omega L
+$$
+
+mit:
+- \(X_L\) = induktiver Widerstand
+- \(L\) = Induktivität
+- \(\omega = 2\pi f\)
+
+### Verhalten
+- bei **Gleichstrom (f = 0):**
+  $$
+  X_L = 0
+  $$
+  → Spule wirkt wie ein normaler Leiter
+
+- bei **Wechselstrom:**
+  → Stromänderung erzeugt Gegenspannung (Selbstinduktion)
+
+### Warum wird er bei AC größer?
+
+Je schneller sich der Strom ändert (höhere Frequenz), desto stärker ist die Gegeninduktion:
+
+$$
+X_L \propto f
+$$
+
+---
+
+## 3. Kapazitiver Widerstand (Kondensator)
+
+$$
+X_C = \frac{1}{\omega C}
+$$
+
+mit:
+- \(X_C\) = kapazitiver Widerstand
+- \(C\) = Kapazität
+- \(\omega = 2\pi f\)
+
+### Verhalten
+- bei **Gleichstrom (f = 0):**
+  $$
+  X_C \rightarrow \infty
+  $$
+  → Kondensator blockiert Strom
+
+- bei **Wechselstrom:**
+  → ständiges Laden und Entladen ermöglicht Stromfluss
+
+### Warum wird er bei hoher Frequenz kleiner?
+
+Je schneller die Spannung wechselt, desto schneller lädt/entlädt der Kondensator:
+
+$$
+X_C \propto \frac{1}{f}
+$$
+
+---
+
+## Warum spielt die Kreisfrequenz eine Rolle?
+
+$$
+\omega = 2\pi f
+$$
+
+Die Kreisfrequenz beschreibt, wie schnell sich das Signal ändert.
+
+- hohe Frequenz → schnelle Änderung
+- niedrige Frequenz → langsame Änderung
+
+### Auswirkungen:
+
+- Spule:
+  $$
+  X_L = \omega L \Rightarrow steigt mit f
+  $$
+
+- Kondensator:
+  $$
+  X_C = \frac{1}{\omega C} \Rightarrow sinkt mit f
+  $$
+
+---
+
