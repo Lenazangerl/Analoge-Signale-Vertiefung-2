@@ -13,8 +13,6 @@ Da sich periodische Wechselspannungen ständig zwischen positiven und negativen 
 
 ## 1. Signalformen und Effektivwertberechnung ($\hat{U} = 5\,\text{V}$)
 
-Nachfolgend sind die Berechnungen für vier grundlegende Signalformen bei einem Spitzenwert von $\hat{U} = 5\,\text{V}$ aufgeführt.
-
 ### A. Sinussignal
 **Formel:**
 $$U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{2}}$$
@@ -23,7 +21,7 @@ $$U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{2}}$$
 $$U_{\mathrm{eff}} = \frac{5\,\text{V}}{\sqrt{2}} \approx \frac{5}{1{,}414} \approx 3{,}54\,\text{V}$$
 
 **Erklärung:**
-Die Sinuswelle erreicht ihren Spitzenwert von $5\,\text{V}$ innerhalb einer Periode nur sehr kurzzeitig im Scheitelpunkt. Da die Spannung kontinuierlich ab- und aufbaut, liegt der Leistungseffekt im zeitlichen Mittel deutlich unter dem Spitzenwert.
+Die Sinuswelle erreicht ihren Spitzenwert von $5\,\text{V}$ innerhalb einer Periode nur sehr kurzzeitig im Scheitelpunkt. Da die Spannung ständig ab- und aufbaut, liegt der Leistungseffekt im zeitlichen Mittel deutlich unter dem Spitzenwert.
 
 <img width="593" height="242" alt="image" src="https://github.com/user-attachments/assets/143f9d29-22e6-4856-b46c-67f675787325" />
 
