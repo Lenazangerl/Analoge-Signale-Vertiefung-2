@@ -81,7 +81,12 @@ In der Wechselstromtechnik wird der klassische Widerstandsbegriff erweitert, da 
 | **Kapazitiver Blindwiderstand** (Kondensator) | $X_C = \frac{1}{\omega \cdot C} = \frac{1}{2\pi f \cdot C}$ | $X_C \rightarrow \infty\,\Omega$<br>Wirkt im geladenen Zustand wie eine dauerhafte Leitungsunterbrechung. | Antiproportional zur Frequenz. Führt zu einer Phasenvoreilung des Stroms. |
 
 ### Warum ist der Widerstand einer Spule an Sinusspannungen größer als bei Gleichspannung?
-Ein sinusförmiger Wechselstrom ändert kontinuierlich seine Stärke und Richtung. Nach dem **Lenzschen Gesetz** induziert jede Stromänderung in einer Spule eine Gegenspannung (Selbstinduktion), welche ihrer Ursache – der Stromänderung – entgegenwirkt. Je schneller sich der Strom ändert (also je höher die Frequenz $f$ bzw. Kreisfrequenz $\omega$ ist), desto intensiver ist diese induzierte Gegenspannung. Bei Gleichstrom findet nach dem Einschwingvorgang keine Stromänderung mehr statt, weshalb die Gegenwirkung verschwindet und nur der minimale ohmsche Drahtwiderstand wirksam bleibt.
+Ein sinusförmiger Wechselstrom ändert kontinuierlich seine Stärke und Richtung. Jede Spule induziert bei jeder Stromänderung eine Gegenspannung (Selbstinduktion), welche ihrer Ursache – der Stromänderung – entgegenwirkt. Je schneller sich der Strom ändert (also je höher die Frequenz $f$ bzw. Kreisfrequenz $\omega$ ist), desto intensiver ist diese induzierte Gegenspannung. Bei Gleichstrom findet nach dem Einschwingvorgang keine Stromänderung mehr statt, weshalb die Gegenwirkung verschwindet und nur der minimale ohmsche Drahtwiderstand wirksam bleibt.
+
+### Warum wird der Widerstand eines Kondensators bei höheren Frequenzen kleiner als bei Gleichspannung?
+Für Gleichstrom ($f = 0\,\text{Hz}$) stellt er nach dem einmaligen Ladevorgang eine dauerhafte Trennung des Stromkreises dar der Widerstand ist unendlich groß ($X_C \rightarrow \infty\,\Omega$). Weil der Kondensator direkt aufgeladen wird.
+
+Bei einer sinusförmigen Wechselspannung ändert sich die Polarität der Spannungsquelle jedoch ständig. Der Kondensator wird in der ersten Halbwelle aufgeladen, in der nächsten Halbwelle entladen, umgepolt und wieder aufgeladen.
 
 ### Die Rolle der Kreisfrequenz ($\omega$)
 Die Kreisfrequenz $\omega = 2\pi f$ beschreibt die Winkelgeschwindigkeit der Zeigerrotation und repräsentiert die zeitliche Änderungsrate des Signals in Radiant pro Sekunde. Sie fließt direkt in die Berechnung ein, weil die Blindwiderstände dynamische Reaktionen auf die *Änderungsgeschwindigkeit* des Stroms (Spule) bzw. der Spannung (Kondensator) darstellen.
@@ -123,6 +128,7 @@ Zur Überprüfung der Schaltung wird in Tinkercad folgende Schaltung simuliert:
 **Verhalten bei der Überprüfung:** * Speist man eine niedrige Frequenz von $100\,\text{Hz}$ ein, bleibt die Ausgangsamplitude nahezu unverändert bei knapp $5\,\text{V}$.
 * Erhöht man die Frequenz exakt auf die berechnete Grenzfrequenz von $1\,\text{kHz}$, sinkt die Ausgangsspannung auf genau **$70{,}7\,\%$** des Eingangswertes (Dämpfung um $-3\,\text{dB}$, was exakt $U_{\mathrm{eff}} = \frac{U_{\mathrm{in}}}{\sqrt{2}}$ entspricht) und zeigt eine Phasenverschiebung von $-45^\circ$.
 * Bei Frequenzen weit über $1\,\text{kHz}$ (z. B. $10\,\text{kHz}$) bricht die Ausgangsspannung am Oszilloskop fast vollständig ein.
+* 
+<img width="526" height="377" alt="image" src="https://github.com/user-attachments/assets/9bf8591f-498b-4d54-8054-500d0402a800" />
 
-<img width="673" height="401" alt="image" src="https://github.com/user-attachments/assets/63ab2abb-7f90-461c-97d9-1ad76abbea1f" />
-
+<img width="608" height="381" alt="image" src="https://github.com/user-attachments/assets/1f7dfbd3-d165-41f0-bd59-4a64b8836a92" />
