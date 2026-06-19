@@ -42,7 +42,7 @@ Das ideale Rechtecksignal schaltet instantan zwischen $+5\,\text{V}$ und $-5\,\t
 
 ---
 
-### C. Dreiecksignal
+### Dreiecksignal
 **Formel:**
 $$U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{3}}$$
 
@@ -50,13 +50,13 @@ $$U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{3}}$$
 $$U_{\mathrm{eff}} = \frac{5\,\text{V}}{\sqrt{3}} \approx \frac{5}{1{,}732} \approx 2{,}89\,\text{V}$$
 
 **Erklärung:**
-Durch den rein linearen, gleichmäßigen Anstieg und Abfall verweilt das Signal mathematisch gesehen viel Zeit in der Nähe des Nullpunkts. Da kleine Werte im Quadrat noch kleiner gewichtet werden, fällt der Effektivwert geringer aus als beim harmonischen Sinussignal.
+Durch den rein linearen, gleichmäßigen Anstieg und Abfall verweilt das Signal mathematisch gesehen viel Zeit in der Nähe des Nullpunkts. Da kleine Werte im Quadrat noch kleiner werden, ist der Effektivwert geringer als beim Sinussignal.
 
 <img width="593" height="226" alt="image" src="https://github.com/user-attachments/assets/5fdb5ecf-d366-41f7-8b1c-2ef4aa93e88d" />
 
 ---
 
-### D. Sägezahnsignal
+### Sägezahnsignal
 **Formel:**
 $$U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{3}}$$
 
