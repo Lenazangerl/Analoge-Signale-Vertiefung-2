@@ -13,7 +13,7 @@ Da sich periodische Wechselspannungen ständig zwischen positiven und negativen 
 
 ## 1. Signalformen und Effektivwertberechnung ($\hat{U} = 5\,\text{V}$)
 
-### A. Sinussignal
+### Sinussignal
 **Formel:**
 $$U_{\mathrm{eff}} = \frac{\hat{U}}{\sqrt{2}}$$
 
@@ -28,7 +28,7 @@ Die Sinuswelle erreicht ihren Spitzenwert von $5\,\text{V}$ innerhalb einer Peri
 
 ---
 
-### B. Rechtecksignal (symmetrisch)
+### Rechtecksignal
 **Formel:**
 $$U_{\mathrm{eff}} = \hat{U}$$
 
