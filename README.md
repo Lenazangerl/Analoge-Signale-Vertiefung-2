@@ -1,11 +1,13 @@
-# Analoge Signale & Wechselstromtechnik: Vertiefung
+# Analoge Signale & Wechselstromtechnik
+Datum 18.06.2026
+---
 
 Der **Effektivwert** ($U_{\mathrm{eff}}$ bzw. $I_{\mathrm{eff}}$) beschreibt den Wert einer Wechselspannung oder eines Wechselstroms, der an einem ohmschen Widerstand im zeitlichen Mittel die gleiche elektrische Leistung (Wärmeenergie) erzeugt wie eine gleich große Gleichspannung oder ein gleich großer Gleichstrom.
 
-> **Hintergrund:** Da sich periodische Wechselspannungen kontinuierlich zwischen positiven und negativen Werten bewegen, beträgt ihr linearer Mittelwert über eine vollständige Periode exakt null. Um die energetische Wirkung dennoch vergleichen zu können, nutzt man das mathematische RMS-Verfahren (*Root Mean Square*):
-> 1. Quadrieren der Momentanwerte des Signals $x(t)$ (negative Werte werden positiv).
-> 2. Mittelwertbildung über die Periodendauer $T$.
-> 3. Ziehen der Quadratwurzel aus diesem Mittelwert.
+Da sich periodische Wechselspannungen ständig zwischen positiven und negativen Werten bewegen, beträgt ihr linearer Mittelwert über eine vollständige Periode exakt null. Um die energetische Wirkung dennoch vergleichen zu können, nutzt man das mathematische RMS-Verfahren (*Root Mean Square*):
+1. Quadrieren der Momentanwerte des Signals $x(t)$ (negative Werte werden positiv).
+2. Mittelwertbildung über die Periodendauer $T$.
+3. Ziehen der Quadratwurzel aus diesem Mittelwert.
 
 ---
 
